@@ -25,7 +25,9 @@ app.get("/api/hello", function (req, res) {
 });
 
 app.get("/api/:date", (req, res) => {
-  
+  let date = new Date();
+  const dateStr = req.params.date.trim();
+
 })
 
 
