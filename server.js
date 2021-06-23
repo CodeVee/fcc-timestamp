@@ -48,6 +48,10 @@ app.get("/api/:date", (req, res) => {
   res.json({unix : unix, utc: utc});
 })
 
+app.get("/api", (req, res) => {
+  
+})
+
 
 
 // listen for requests :)
