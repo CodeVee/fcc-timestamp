@@ -41,6 +41,8 @@ app.get("/api/:date", (req, res) => {
     const milli = Number(dateStr);
     date = new Date(milli);
   }
+
+  const unix = date.getTime();
 })
 
 
