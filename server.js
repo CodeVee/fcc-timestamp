@@ -43,6 +43,7 @@ app.get("/api/:date", (req, res) => {
   }
 
   const unix = date.getTime();
+  const utc = date.toUTCString();
 })
 
 
