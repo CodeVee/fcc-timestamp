@@ -37,8 +37,8 @@ app.get("/api/:date", (req, res) => {
   }
 
   if (!isNaN(dateStr)) {
-    const milli = Number(dateStr);
-    date = new Date(milli);
+    const milliSecs = Number(dateStr);
+    date = new Date(milliSecs);
   }
 
   const unix = date.getTime();
