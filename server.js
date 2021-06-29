@@ -29,8 +29,7 @@ app.get("/api/:date", (req, res) => {
   const dateStr = req.params.date;
 
   if (isNaN(dateStr) && isNaN(Date.parse(dateStr))) {
-    res.json({ error: 'Invalid Date' });
-    return;
+    return res.json({ error: 'Invalid Date' });
   }
 
   if (isNaN(dateStr)) {
